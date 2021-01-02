@@ -1,0 +1,26 @@
+// Mixin
+@mixin button(
+  $bg-color: $primaryColor,
+  $txt-color: white,
+  $radius: 2em,
+  $weight: 400
+) {
+  background-color: $bg-color;
+  color: $txt-color;
+  border-radius: $radius;
+  font-weight: $weight;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  border: 2px solid transparent;
+  text-transform: uppercase;
+}
+
+@mixin hover-button(
+  $bg-color: transparent,
+  $txt-color: $primaryColor,
+  $border: 2px solid $primaryColor
+) {
+  background-color: $bg-color;
+  color: $txt-color;
+  border: $border;
+}
